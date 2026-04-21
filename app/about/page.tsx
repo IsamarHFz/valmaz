@@ -151,10 +151,10 @@ export default function About() {
               Nuestra historia
             </p>
             <h2 className="mb-5 font-serif text-2xl font-normal leading-snug text-neutral-950">
-              Una agencia con propósito desde el primer día
+              Valmaz Marketing Digital
             </h2>
             <p className="mb-3 text-sm leading-relaxed text-neutral-600">
-              Valmaz Marketing Digital fue fundada en 2016 en Tijuana, Baja
+              Valmaz fue fundada en 2016 en Tijuana, Baja
               California, por Víctor Alejandro López Martínez, especialista en
               marketing y consultor empresarial con amplia trayectoria en
               sectores como servicios, restaurantes, salud, logística e

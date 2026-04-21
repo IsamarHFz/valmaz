@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { title } from "process";
 
 export default function HomePage() {
   return (
     <main className="bg-white text-black">
-      <section className="relative min-h-screen flex items-center justify-center pt-20">
+      <section className="relative flex min-h-screen items-center justify-center pt-8 md:pt-10">
         <Image
           src="/hero.jpg"         
           alt="Hero Valmaz"

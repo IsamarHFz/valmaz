@@ -29,3 +29,22 @@ body {
 html {
   scroll-padding-top: 7rem;
 }
+
+@keyframes logo-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-marquee-track {
+  animation: logo-marquee 26s linear infinite;
+  width: max-content;
+}
+
+.logo-marquee-track:hover {
+  animation-play-state: paused;
+}

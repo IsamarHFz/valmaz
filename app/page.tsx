@@ -1,7 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import ClientsCarousel from "./components/ClientsCarousel";
 import { featuredServices } from "./lib/services";
+
+const clientLogos = [
+  { src: "/3Reyes.png", alt: "3 Reyes" },
+  { src: "/DLUX.png", alt: "DLUX" },
+  { src: "/EcoRecycling.png", alt: "Eco Recycling" },
+  { src: "/HMN.jpg", alt: "HMN" },
+  { src: "/Mexpogroup.png", alt: "Mexpogroup" },
+  { src: "/NovoPlastic.png", alt: "Novo Plastic" },
+  { src: "/Pawti.png", alt: "Pawti" },
+];
 
 export default function HomePage() {
   return (
@@ -87,6 +98,18 @@ export default function HomePage() {
               Ver más servicios
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="overflow-hidden border-t border-black/8 bg-white px-6 py-14 md:px-12 md:py-16">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-8 text-center">
+            <h2 className="mt-3 font-medium text-3xl font-normal text-neutral-950 md:text-4xl">
+              Clientes con los que hemos trabajado
+            </h2>
+          </div>
+
+          <ClientsCarousel logos={clientLogos} />
         </div>
       </section>
     </main>

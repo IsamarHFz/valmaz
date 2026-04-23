@@ -14,6 +14,10 @@ export default function ServicesPage() {
           <h1 className="mt-3 max-w-4xl font-serif text-5xl font-normal leading-[1.02] text-white md:text-6xl">
             Lo que ofrecemos en Valmaz Marketing Digital
           </h1>
+          <p className="mt-6 max-w-2xl text-sm leading-7 text-white/70 md:text-base">
+            Explora cada servicio con mas detalle y descubre como aterrizamos estrategia,
+            creatividad y ejecucion para impulsar marcas con intencion.
+          </p>
         </div>
       </section>
 
@@ -48,7 +52,7 @@ export default function ServicesPage() {
                     href={`/services/${service.slug}`}
                     className="text-xs font-medium uppercase tracking-[0.22em] text-neutral-950 transition-opacity duration-300 hover:opacity-60"
                   >
-                    Leer más
+                    Ver servicio
                   </Link>
                 </div>
               </div>

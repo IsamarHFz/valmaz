@@ -48,7 +48,7 @@ export default function ServicesPage() {
                     href={`/services/${service.slug}`}
                     className="text-xs font-medium uppercase tracking-[0.22em] text-neutral-950 transition-opacity duration-300 hover:opacity-60"
                   >
-                    Leer mas
+                    Leer más
                   </Link>
                 </div>
               </div>

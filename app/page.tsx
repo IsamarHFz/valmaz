@@ -25,7 +25,7 @@ export default function HomePage() {
             href="/about"
             className="inline-block rounded-full bg-white px-6 py-2 font-medium text-black transition-all duration-300 ease-in-out hover:scale-105 hover:bg-black hover:text-white"
           >
-            Mas informacion
+            Más información
           </Link>
         </div>
       </section>
@@ -71,7 +71,7 @@ export default function HomePage() {
                       href={`/services/${service.slug}`}
                       className="text-xs font-medium uppercase tracking-[0.22em] text-neutral-950 transition-opacity duration-300 hover:opacity-60"
                     >
-                      Leer mas
+                      Leer más
                     </Link>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ export default function HomePage() {
               href="/services"
               className="inline-block rounded-full border border-black px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-300 hover:bg-black hover:text-white"
             >
-              Ver mas servicios
+              Ver más servicios
             </Link>
           </div>
         </div>

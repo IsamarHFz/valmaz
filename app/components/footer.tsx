@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 
 const contactInfo = {
-  direccion: "Blvd. Agua Caliente 9955, Calete, Tijuana, Mexico",
+  direccion: "Blvd. Agua Caliente 9955, Calete, 22044 Tijuana, B.C., México",
   telefono: "+52 664 385 2992",
   email: "valmazgroup@gmail.com",
   horario: "Lun - Vie: 9:00 am - 5:00 pm",

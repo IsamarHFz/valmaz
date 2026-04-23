@@ -4,10 +4,9 @@ import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 
 const contactInfo = {
   phone: "+52 664 385 2992 ",
-  whatsapp: "526641234567",
   email: "valmazgroup@gmail.com",
   address: "Tijuana, Baja California, México",
-  addressFull: "Blvd Agua Caliente, 9955, Calete, Tijuana, México",
+  addressFull: "Blvd. Agua Caliente 9955, Calete, 22044 Tijuana, B.C., México",
   mapEmbedUrl:
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3364.3148422089125!2d-117.02068582516598!3d32.517737173773135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94840208ff4ab%3A0x91081caa78c1cc22!2sValmaz!5e0!3m2!1ses!2smx!4v1776932578564!5m2!1ses!2smx", 
 };
@@ -35,13 +34,13 @@ const InstagramIcon = () => (
 const socials = [
   {
     name: "Facebook",
-    url: "https://www.facebook.com/valmazmarketingdigital",
+    href: "https://www.facebook.com/valmazmarketingdigital",
     icon: FacebookIcon,
     handle: "@valmaz",
   },
   {
     name: "Instagram",
-    url: "https://www.instagram.com/valmazgroup",
+    href: "https://www.instagram.com/valmazmarketingdigital",
     icon: InstagramIcon,
     handle: "@valmaz",
   },
@@ -50,7 +49,6 @@ const socials = [
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-white font-sans">
-      {/* Hero */}
       <section className="bg-black text-white px-6 py-16 md:py-20">
         <div className="max-w-5xl mx-auto">
           <h1 className="font-serif text-4xl md:text-6xl font-light leading-tight max-w-2xl">
@@ -59,13 +57,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Content grid */}
       <section className="max-w-5xl mx-auto px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-16">
-
-        {/* Left — contact data */}
         <div className="space-y-10">
-
-          {/* Direct contact */}
           <div>
             <h2 className="text-xs tracking-[0.2em] uppercase text-gray-400 mb-5">
               Datos de contacto
@@ -80,20 +73,6 @@ export default function ContactPage() {
                     <p className="text-xs text-gray-400 mb-0.5">Teléfono</p>
                     <p className="text-base font-medium group-hover:underline underline-offset-2">
                       {contactInfo.phone}
-                    </p>
-                  </div>
-                </a>
-              </li>
-
-              <li>
-                <a href={`https://wa.me/${contactInfo.whatsapp}`} target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group">
-                  <span className="mt-0.5 p-2 border border-gray-200 rounded-full group-hover:border-black transition-colors">
-                    <MessageCircle size={15} strokeWidth={1.5} />
-                  </span>
-                  <div>
-                    <p className="text-xs text-gray-400 mb-0.5">WhatsApp</p>
-                    <p className="text-base font-medium group-hover:underline underline-offset-2">
-                      Enviar mensaje
                     </p>
                   </div>
                 </a>
@@ -127,7 +106,6 @@ export default function ContactPage() {
             </ul>
           </div>
 
-          {/* Schedule */}
           <div>
             <h2 className="text-xs tracking-[0.2em] uppercase text-gray-400 mb-5 flex items-center gap-2">
               <Clock size={13} strokeWidth={1.5} />
@@ -145,7 +123,6 @@ export default function ContactPage() {
             </ul>
           </div>
 
-          {/* Social media */}
           <div>
             <h2 className="text-xs tracking-[0.2em] uppercase text-gray-400 mb-5">
               Redes sociales
@@ -155,7 +132,7 @@ export default function ContactPage() {
                 const Icon = s.icon;
                 return (
                   <li key={s.name}>
-                    <a href={s.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                    <a href={s.href} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                       <span className="p-2 border border-gray-200 rounded-full group-hover:border-black transition-colors">
                         <Icon />
                       </span>
@@ -173,7 +150,6 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Right — map */}
         <div className="flex flex-col gap-4">
           <h2 className="text-xs tracking-[0.2em] uppercase text-gray-400">
             Ubicación
@@ -195,17 +171,6 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
-
-      {/* WhatsApp floating button */}
-      <a
-        href={`https://wa.me/${contactInfo.whatsapp}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Contactar por WhatsApp"
-        className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-105 transition-transform"
-      >
-        <MessageCircle size={22} strokeWidth={1.8} />
-      </a>
     </main>
   );
 }

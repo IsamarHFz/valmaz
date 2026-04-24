@@ -6,10 +6,6 @@ interface FuncItem {
   text: string;
 }
 
-interface TecItem {
-  text: string;
-}
-
 const funcionesItems: FuncItem[] = [
   {
     icon: (
@@ -85,26 +81,6 @@ const funcionesItems: FuncItem[] = [
   },
 ];
 
-const infraItems: TecItem[] = [
-  { text: "Sala de trabajo en Torela Corporativo, Tijuana" },
-  { text: "Laptops para gestión de campañas y contenido" },
-  { text: "Tablets iPad para revisión de diseños" },
-  { text: "Cámaras profesionales Canon para foto y video" },
-  { text: "Equipo de iluminación profesional" },
-  { text: "Equipo de audio para grabación y entrevistas" },
-];
-
-const plataformasItems: TecItem[] = [
-  { text: "Meta Business Suite - campañas en Facebook e Instagram" },
-  { text: "Google Ads - publicidad en buscadores" },
-  { text: "WordPress - desarrollo y gestión de sitios web" },
-  { text: "Canva y herramientas de diseño digital" },
-  { text: "Software de edición de video profesional" },
-  { text: "Plataformas de métricas y análisis de campañas" },
-];
-
-
-
 export default function About() {
   return (
     <main className="bg-[#f5f4f0] font-sans text-neutral-900">
@@ -117,8 +93,8 @@ export default function About() {
             Agencia con inteligencia.
           </h1>
           <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-white/55">
-            Desde 2016, ayudamos a empresas a crecer mediante estrategias de
-            marketing digital, creatividad y tecnología.
+            Desde 2016, ayudamos a empresas a crecer mediante estrategias de marketing
+            digital, creatividad y tecnología.
           </p>
         </div>
       </section>
@@ -131,6 +107,7 @@ export default function About() {
               alt="Equipo y entorno creativo de Valmaz Marketing Digital"
               fill
               priority
+              quality={70}
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/25 to-black/70" />
@@ -154,22 +131,21 @@ export default function About() {
               Valmaz Marketing Digital
             </h2>
             <p className="mb-3 text-sm leading-relaxed text-neutral-600">
-              Valmaz fue fundada en 2016 en Tijuana, Baja
-              California, por Víctor Alejandro López Martínez, especialista en
-              marketing y consultor empresarial con amplia trayectoria en
-              sectores como servicios, restaurantes, salud, logística e
-              industria.
+              Valmaz fue fundada en 2016 en Tijuana, Baja California, por Víctor
+              Alejandro López Martínez, especialista en marketing y consultor
+              empresarial con amplia trayectoria en sectores como servicios,
+              restaurantes, salud, logística e industria.
             </p>
             <p className="mb-3 text-sm leading-relaxed text-neutral-600">
               Desde su creación, la agencia combina creatividad, estrategia y
-              tecnología para ofrecer soluciones integrales: campañas
-              publicitarias, gestión de redes sociales, producción audiovisual y
-              desarrollo de plataformas digitales.
+              tecnología para ofrecer soluciones integrales: campañas publicitarias,
+              gestión de redes sociales, producción audiovisual y desarrollo de
+              plataformas digitales.
             </p>
             <p className="text-sm leading-relaxed text-neutral-600">
-              Hoy, Valmaz cuenta con una cartera diversa de clientes en Tijuana
-              y el norte de México, con un equipo especializado en diseño,
-              producción, desarrollo web y gestión de campañas.
+              Hoy, Valmaz cuenta con una cartera diversa de clientes en Tijuana y el
+              norte de México, con un equipo especializado en diseño, producción,
+              desarrollo web y gestión de campañas.
             </p>
           </div>
         </div>
@@ -178,34 +154,29 @@ export default function About() {
       <section className="bg-[#f0ede8] px-6 py-16 md:px-12">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 md:gap-12">
           <div className="rounded-sm border border-black/10 bg-white p-8 shadow-[0_1px_0_rgba(0,0,0,0.03)] md:p-10">
-            <h3 className="mb-4 font-serif text-xl font-normal">
-              ¿Quiénes somos y qué hacemos?
-            </h3>
+            <h3 className="mb-4 font-serif text-xl font-normal">¿Quiénes somos y qué hacemos?</h3>
             <p className="rounded-sm border border-dashed border-neutral-300 p-4 text-sm italic leading-relaxed text-neutral-700">
               Nuestra misión es ayudar a cada cliente a crecer con soluciones
-              innovadoras, prácticas y rentables que sí funcionen en el mundo
-              actual, mientras nuestra visión es convertirnos en la agencia
-              referente de nueva generación en México y la región fronteriza,
-              reconocida por crear marcas más fuertes, negocios más rentables y
-              estrategias que se adelantan al futuro.
+              innovadoras, prácticas y rentables que sí funcionen en el mundo actual,
+              mientras nuestra visión es convertirnos en la agencia referente de nueva
+              generación en México y la región fronteriza, reconocida por crear marcas
+              más fuertes, negocios más rentables y estrategias que se adelantan al
+              futuro.
             </p>
           </div>
 
           <div className="rounded-sm border border-black/10 bg-white p-8 shadow-[0_1px_0_rgba(0,0,0,0.03)] md:p-10">
-            <h3 className="mb-4 font-serif text-xl font-normal">
-              ¿A dónde vamos?
-            </h3>
+            <h3 className="mb-4 font-serif text-xl font-normal">¿A dónde vamos?</h3>
             <p className="rounded-sm border border-dashed border-neutral-300 p-4 text-sm italic leading-relaxed text-neutral-700">
-              Valmaz Marketing es una agencia de marketing digital con visión
-              moderna, estratégica y orientada a resultados, creada para
-              impulsar el crecimiento de negocios, marcas y empresas que buscan
-              vender más, posicionarse mejor y evolucionar en un mercado cada
-              vez más competitivo; combinamos creatividad, publicidad,
-              tecnología, contenido, análisis y ejecución inteligente para
-              transformar ideas en oportunidades reales de negocio,
-              desarrollando campañas, marcas, sitios web, producción
-              audiovisual y estrategias que conectan con las personas y generan
-              impacto medible.
+              Valmaz Marketing es una agencia de marketing digital con visión moderna,
+              estratégica y orientada a resultados, creada para impulsar el
+              crecimiento de negocios, marcas y empresas que buscan vender más,
+              posicionarse mejor y evolucionar en un mercado cada vez más
+              competitivo; combinamos creatividad, publicidad, tecnología, contenido,
+              análisis y ejecución inteligente para transformar ideas en oportunidades
+              reales de negocio, desarrollando campañas, marcas, sitios web,
+              producción audiovisual y estrategias que conectan con las personas y
+              generan impacto medible.
             </p>
           </div>
         </div>
@@ -213,9 +184,7 @@ export default function About() {
 
       <section className="bg-white px-6 py-16 md:px-12">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-2 font-serif text-2xl font-normal">
-            Lo que hacemos por tu empresa
-          </h2>
+          <h2 className="mb-2 font-serif text-2xl font-normal">Lo que hacemos por tu empresa</h2>
           <p className="mb-10 text-sm text-neutral-400">
             Servicios diseñados para impulsar tu crecimiento digital
           </p>
@@ -229,9 +198,7 @@ export default function About() {
                 <div className="flex h-8 w-8 min-w-[32px] items-center justify-center rounded-sm bg-neutral-900">
                   {item.icon}
                 </div>
-                <p className="text-sm leading-relaxed text-neutral-600">
-                  {item.text}
-                </p>
+                <p className="text-sm leading-relaxed text-neutral-600">{item.text}</p>
               </div>
             ))}
           </div>

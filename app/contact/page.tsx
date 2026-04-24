@@ -1,6 +1,4 @@
-"use client";
-
-import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
 
 const contactInfo = {
   phone: "+52 664 385 2992 ",

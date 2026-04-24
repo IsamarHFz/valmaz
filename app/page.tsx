@@ -23,6 +23,7 @@ export default function HomePage() {
           alt="Hero Valmaz"
           fill
           priority
+          quality={72}
           className="object-cover opacity-80"
         />
 
@@ -63,6 +64,8 @@ export default function HomePage() {
                     src={service.image}
                     alt={service.title}
                     fill
+                    loading="lazy"
+                    quality={68}
                     className="object-cover transition-transform duration-700 hover:scale-[1.03]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent" />

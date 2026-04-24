@@ -48,6 +48,7 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
             alt={service.title}
             fill
             priority
+            quality={70}
             className="object-cover opacity-25"
           />
           <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(10,10,10,0.49),rgba(10,10,10,0.52))]" />
@@ -121,6 +122,8 @@ export default async function ServicePage(props: PageProps<"/services/[slug]">) 
                       src={item.image}
                       alt={item.title}
                       fill
+                      loading="lazy"
+                      quality={68}
                       className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent" />
